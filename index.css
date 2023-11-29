@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+.wrapper{
+    width:auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("night.png");
+    
+}
+.section{
+    width: 500px;
+    margin-top: 5rem;
+    background-color:rgba(196, 196, 247, 0.228);
+    backdrop-filter: blur(0px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; 
+}
+
+.weathercenter{
+    display: flex;
+    flex-direction: row;
+    margin-top: 11px;
+    gap: 6px;
+  
+    
+}
+
+.weathertext1{
+    text-shadow: 3px 1px rgb(236, 236, 240);
+    
+    
+}
+
+.weathertext2{
+    text-shadow: 3px 1px rgb(239, 239, 243);
+}
+
+.yourweather{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 2rem;
+    gap: 4rem;
+}
+.searchbtn{
+    display: flex;  
+    flex-direction: row;
+    
+}
+.searchbox{
+  border-radius: 5px;  
+  padding: 5px;
+  border: 2px solid black;
+}
+.btn{
+    border-radius: 5px;  
+    padding: 5px;
+    border: 2px solid black;
+    
+}
+.citynameandflag{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.box3{
+    display: flex;
+    gap:1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.text{
+    font-size: 1.5rem;
+}
+.bx2{
+    font-size: 2rem;
+}
+.box1{
+    background-color: rgb(240, 232, 222);
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box2{
+    background-color: rgb(240, 232, 222);
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box03{
+    background-color: rgb(240, 232, 222);
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alldata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.loader{
+    display: none;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#Loading{
+    margin-top: 2rem;
+    margin-left: 10%;
+}
+.custom-loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #00050a;
+    margin-left: 50%;
+    
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: s7 1s infinite steps(8);
+  }
+  
+  @keyframes s7 {
+    100% {transform: rotate(1turn)}
+  }
+
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    display: none;
+  
+}
+
+.displaynone{
+    display: none;
+}
+.displayblock{
+    display: block;
+}
+
+
+
+
+
+
+@media (max-width: 600px){
+    .section{
+        width: 20rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: auto;
+        background-color: rgba(0, 255, 255, 0.283);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px; 
+    }
+    .yourweather{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+        gap:2rem;
+    } 
+    .searchbutton{
+        margin-top: -1rem;
+    }
+    .weathertext{
+        font-size: 3rem;
+        
+    }
+    .weathertext1{
+       
+                margin-top: 5rem;
+    }
+    .weathertext2{
+        
+                margin-top: 0rem;
+    }
+    .temp{
+        margin-top: 0rem;
+    }
+    .weathercenter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        margin-top: -60px;
+        box-shadow: 80px solid rgb(248, 247, 247);
+    }
+    .btn{
+        margin-top: 0rem;
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+        gap:0.7rem;
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+    
+    }
+    .error{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        margin-left: 1rem;
+      
+    }
+    .displaynone{
+        display: none;
+    }
+    .displayblock{
+        display: block;
+    }
+    
+}
